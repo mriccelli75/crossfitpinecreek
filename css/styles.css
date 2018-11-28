@@ -1,0 +1,61 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+
+/*
+Table Of Contents
+
+# BRANDING
+  
+  --crossfit-black: rgb(0,0,0);
+  --crossfit-grey: rgb(223,235,229);
+  --crossfit-tuscanbrown: rgb(122,81,47);
+  --crossfit-darkjungle-green: rgb(22,38,23);
+  --crossfit-cadmium-green: rgb(5,104,57);
+
+
+  Accent Colors:
+  --crossfit-midnight-blue: rgb(25,25,112);
+  --crossfit-midnight-dark-red: rgb(139,0,0);
+  --crossfit-pine-creek-orange: rgb(229,148,0);
+  
+
+# TYPOGRAPHY
+  --crossfit-heading: font-family: 'Roboto', sans-serif;
+  --crossfit-paragraph: font-family: 'Open Sans', sans-serif;
+
+
+  */
+
+
+
+/*
+* ==========================================================
+*     BRANDING 
+* ==========================================================
+*/
+:root {
+  /*colors*/
+  --crossfit-black: rgb(0,0,0);
+  --crossfit-grey: rgb(223,235,229);
+  --crossfit-tuscanbrown: rgb(122,81,47);
+  --crossfit-darkjungle-green: rgb(22,38,23);
+  --crossfit-cadmium-green: rgb(5,104,57);
+
+  /* colors */
+  --crossfit-midnight-blue: rgb(25,25,112);
+  --crossfit-midnight-dark-red: rgb(139,0,0);
+  --crossfit-pine-creek-orange: rgb(229,148,0);
+ 
+  /*typography*/
+  --tribe-heading: font-family: 'Open Sans', sans-serif;
+  --tribe-paragraph: font-family: 'Roboto', sans-serif;
+  
+}
+
+
+/*
+* ==========================================================
+*     TYPOGRAPHY
+* ==========================================================
+*/
