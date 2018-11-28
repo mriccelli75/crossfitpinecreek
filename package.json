@@ -1,0 +1,24 @@
+{
+  "name": "crossfitpinecreek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriccelli75/crossfitpinecreek.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mriccelli75/crossfitpinecreek/issues"
+  },
+  "homepage": "https://github.com/mriccelli75/crossfitpinecreek#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
