@@ -23,9 +23,7 @@ Table Of Contents
 # TYPOGRAPHY
   --crossfit-heading: font-family: 'Roboto', sans-serif;
   --crossfit-paragraph: font-family: 'Open Sans', sans-serif;
-
-
-  */
+*/
 
 
 
@@ -42,14 +40,14 @@ Table Of Contents
   --crossfit-darkjungle-green: rgb(22,38,23);
   --crossfit-cadmium-green: rgb(5,104,57);
 
-  /* colors */
+  /* accent colors */
   --crossfit-midnight-blue: rgb(25,25,112);
   --crossfit-midnight-dark-red: rgb(139,0,0);
   --crossfit-pine-creek-orange: rgb(229,148,0);
  
   /*typography*/
-  --tribe-heading: font-family: 'Open Sans', sans-serif;
-  --tribe-paragraph: font-family: 'Roboto', sans-serif;
+  --crossfit-heading: font-family: 'Open Sans', sans-serif;
+  --crossfit-paragraph: font-family: 'Roboto', sans-serif;
   
 }
 
@@ -59,3 +57,154 @@ Table Of Contents
 *     TYPOGRAPHY
 * ==========================================================
 */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: var(--tribe-heading);
+  text-transform: uppercase;
+  color: var(--crossfit-black);
+}
+p {
+  font-family: var(--crossfit-paragraph);
+  color: rgba(10,10,10,0.65);
+}
+
+a {
+  color: var(--crossfit-pine-creek-orange);
+  font-family: var(--crossfit-paragraph);
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: lightgrey;
+}
+
+nav.navbar .navbar-toggler span {
+  width: 25px;
+  margin: 5px;
+  display: block;
+  height: 2px;
+  background: #333;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+.nav-item > a.nav-link {
+  color: #000;
+  font-size: 1.1rem;
+  margin-right: .5rem;
+  transition: all 0.5s;
+}
+
+.nav-item > a.nav-link:hover {
+  color: var(--crossfit-cadmium-green);
+}
+
+nav.navbar .navbar-toggler {
+  outline: none;
+}
+
+nav.navbar .navbar-toggler span {
+  width: 25px;
+  margin: 5px;
+  display: block;
+  height: 2px;
+  background: #333;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+nav.navbar .navbar-toggler.active span:first-of-type {
+  -webkit-transform: rotate(45deg) translate(10px);
+  transform: rotate(45deg) translate(10px);
+}
+
+nav.navbar .navbar-toggler.active span:last-of-type {
+  -webkit-transform: rotate(-45deg) translate(10px);
+  transform: rotate(-45deg) translate(10px);
+}
+
+nav.navbar .navbar-toggler.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+nav.navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*
+* ==========================================================
+*     FORMS
+* ==========================================================
+*/
+
+.btn-primary {
+  color: #fff;
+  background: var(--crossfit-tuscanbrown);
+  transition: all 0.5s;
+
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+ .btn-primary:not(:disabled):not(.disabled):active,
+  .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background: var(--crossfit-tuscanbrown);
+  border-color: none;
+}
+/*
+* ==========================================================
+*     LAYOUT
+* ==========================================================
+*/
+section {
+  padding: 190px 0;
+  overflow: hidden;
+}
+
+section#hero {
+  background: url(../img/crossfit-hero.jpg);
+  background-size: cover !important;
+  background-position: center center !important;
+}
+.has-overlay-dark, .has-overlay-darker {
+  position: relative;
+  z-index: 1;
+}
+.has-overlay-dark::before,
+.has-overlay-darker::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+}
