@@ -66,6 +66,7 @@ h1,h2,h3,h4,h5 {
   font-family: var(--tribe-heading);
   text-transform: uppercase;
   color: var(--crossfit-black);
+  font-weight: 700;
 }
 p {
   font-family: var(--crossfit-paragraph);
@@ -91,7 +92,7 @@ a:active {
 }
 
 a:visited {
-  color: lightgrey;
+  color: var(--crossfit-pine-creek-orange);
 }
 
 nav.navbar .navbar-toggler span {
@@ -110,6 +111,7 @@ nav.navbar .navbar-toggler span {
   font-size: 1.1rem;
   margin-right: .5rem;
   transition: all 0.5s;
+  font-weight: 700;
 }
 
 .nav-item > a.nav-link:hover {
@@ -159,14 +161,19 @@ nav.navbar {
 
 .btn-primary {
   color: #fff;
-  background: var(--crossfit-tuscanbrown);
+  background-color: var(--crossfit-tuscanbrown);
+  border: none;
+  border-color: none;
   transition: all 0.5s;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #000;
+  background-color: var(--crossfit-black);
   border-color: none;
 }
 
@@ -174,8 +181,11 @@ nav.navbar {
  .btn-primary:not(:disabled):not(.disabled):active,
   .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background: var(--crossfit-tuscanbrown);
+  background: var(--crossfit-black);
   border-color: none;
+}
+.btn-primary:visited {
+  color: white;
 }
 /*
 * ==========================================================
@@ -183,7 +193,7 @@ nav.navbar {
 * ==========================================================
 */
 section {
-  padding: 190px 0;
+  padding: 100px 0 15px;
   overflow: hidden;
 }
 
@@ -191,13 +201,13 @@ section#hero {
   background: url(../img/crossfit-hero.jpg);
   background-size: cover !important;
   background-position: center center !important;
+  padding-bottom: 75px;
 }
-.has-overlay-dark, .has-overlay-darker {
+.has-overlay-dark {
   position: relative;
   z-index: 1;
 }
-.has-overlay-dark::before,
-.has-overlay-darker::before {
+.has-overlay-dark::before{
   content: '';
   width: 100%;
   height: 100%;
@@ -205,6 +215,238 @@ section#hero {
   top: 0;
   left: 0;
   display: block;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.5);
   z-index: -1;
 }
+.img-container {
+  position: relative;
+}
+.img-container:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -17px;
+  left: 17px;
+  display: block;
+  background: url(../img/camo.jpg);
+  opacity: 1.5;
+  z-index: -1;
+}
+.intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+ 
+}
+
+.intro-text .intro-lead-in {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  line-height: 22px;
+  margin-bottom: 15px;
+  font-family: var(--crossfit-heading);
+  text-transform: uppercase;
+}
+
+.intro-text .intro-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 15px;
+  font-family: var(--crossfit-heading);
+  color: white;
+  line-height: 1;
+}
+.intro-comment {
+  margin-bottom: 30px;
+}
+.intro-comment p {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.25;
+  max-width: 900px;
+  font-family: var(--crossfit-paragraph);
+  color: white;
+}
+
+section {
+  padding-left: 15px;
+  padding-right: 25px;
+}
+section h1 {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+section#crossfit {
+  padding-left: 15px;
+  padding-right: 25px;
+}
+.img-container.img-left:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  display: block;
+  background: url(../img/camo.jpg);
+  opacity: 1.5;
+  z-index: -1;
+}
+section h1 {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+section#drop-ins {
+  background: black;
+  margin-top: 55px;
+  padding-top: 60px;
+  background: url(../img/crossfitPineCreek-cta.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+section#drop-ins::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+
+}
+.drop-in-box {
+  max-width: 900px;
+}
+.drop-in-box h1 {
+  color: #f2f2f2;
+}
+.drop-in-box h2 {
+  color: #d0dae6;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.drop-in-box .hero-text {
+  color: #f2f2f2;
+}
+/* Extra small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+  section {
+    padding: 80px 0 80px;
+    overflow: hidden;
+  }
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+   
+  }
+  .intro-text .intro-lead-in {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-family: var(--crossfit-heading);
+    text-transform: uppercase;
+  } 
+  .intro-text .intro-heading {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 15px;
+    font-family: var(--crossfit-heading);
+    color: white;
+    line-height: 1;
+  }
+  
+  .intro-comment p {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.25;
+    max-width: 900px;
+    font-family: var(--crossfit-paragraph);
+    color: white;
+  }
+
+  section {
+    padding-left: 15px;
+    padding-right: 25px;
+  }
+  section h1 {
+    font-size: 2.5rem;
+  }
+  section#about .order-sm-1
+   {
+    margin-bottom: 50px;
+  }
+ }
+
+
+
+/*Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  section h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  section#about {
+    padding-top: 120px;
+  }
+  section#drop-ins {
+    padding-top: 80px;
+  }
+  }
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  section#about {
+    padding-top: 130px;
+}
+.col-md-6.text.order-1.order-sm-2 {
+  padding: 55px;
+}
+
+.col-md-6.text.order-2.order-sm-1 {
+  padding: 20px;
+}
+.hero-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.drop-in-box h1 {
+  margin-bottom: 1rem;
+}
+.drop-in-box h2 {
+  color: #d0dae6;
+  font-size: 2rem;
+  text-transform: none;
+}
+  }
+
+/*Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  section#about {
+    padding-top: 162px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+section#crossfit {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+  }
+
