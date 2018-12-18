@@ -71,6 +71,7 @@ h1,h2,h3,h4,h5 {
 p {
   font-family: var(--crossfit-paragraph);
   color: rgba(10,10,10,0.65);
+  line-height: 1.6;
 }
 
 a {
@@ -207,6 +208,7 @@ section#hero {
   background-size: cover !important;
   background-position: center center !important;
   padding-bottom: 75px;
+
 }
 .has-overlay-dark {
   position: relative;
@@ -317,7 +319,7 @@ section.drop-ins::before {
 
 }
 .drop-in-box {
-  max-width: 800px;
+  max-width: 85%;
 }
 .drop-in-box h1 {
   color: #f2f2f2;
@@ -388,6 +390,24 @@ section.testimonials .avatar {
   box-shadow: -5.665px 9.429px 35px 0px rgba(0, 0, 0, 0.2);
 }
 
+section.zen-planner {
+  background: #000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+section.zen-planner h1,
+section.zen-planner p {
+  color: #fff;
+}
+/*
+* ==========================================================
+*     SOCIAL MEDIA SECTION
+* ==========================================================
+*/
+section.social-media {
+  padding-top: 35px;
+}
 /* Extra small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap */
 
@@ -461,12 +481,30 @@ section.testimonials .avatar {
   section.drop-ins {
     padding-top: 80px;
   }
+  section.testimonials {
+    padding-top: 60px;
+  }
+  section.testimonials .owl-carousel .owl-stage-outer {
+    padding: 20px 0 50px;
+}
+  section.about .order-md-1 {
+  order: 1;
+  }
+  section.about .order-md-2 {
+    order: 2;
+    }
   }
 
 /*Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-section.about {
-    padding-top: 100px;
+section.about,
+section.crossfit,
+section.testimonials,
+section.zen-planner,
+section.tour-facility {
+    padding-top: 90px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 section {
   padding: 80px 0 80px;
@@ -500,14 +538,20 @@ section {
 
 /*Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  section.about {
+  section.about,
+  section.crossfit,
+  section.testimonials,
+  section.zen-planner,
+  section.tour-facility {
     padding-top: 162px;
     padding-right: 80px;
     padding-left: 80px;
 }
-section.crossfit {
-  padding-right: 80px;
-  padding-left: 80px;
-}
+
+  section.testimonials,
+  section.zen-planner {
+    padding-top: 100px;
   }
+
+}
 
