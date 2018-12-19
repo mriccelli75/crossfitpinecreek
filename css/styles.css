@@ -343,6 +343,7 @@ section.drop-ins::before {
 */
 section.testimonials {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 section.testimonials .owl-carousel .owl-stage-outer {
   padding: 70px 0 50px;
@@ -406,7 +407,26 @@ section.zen-planner p {
 * ==========================================================
 */
 section.social-media {
-  padding-top: 35px;
+  background: #000;
+  padding-bottom: 75px;
+}
+section.social-media h1 {
+  color: white;
+}
+section.social-media h4 {
+  margin-bottom: 55px;
+  color: white;
+}
+section.social-media a {
+  display: block;
+}
+section.social-media .social-media-logo {
+  margin: 0 auto;
+  width: 180px;
+  height: auto;
+}
+section.tour-facility {
+  padding-bottom: 100px;
 }
 /* Extra small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap */
@@ -418,6 +438,9 @@ section.social-media {
     overflow: hidden;
     padding-left: 15px;
     padding-right: 25px;
+  }
+  section.social-media .social-media-logo {
+    width: 235px;
   }
   section.about {
     padding-top: 120px;
@@ -475,6 +498,12 @@ section.social-media {
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
+  section.social-media h1 {
+    margin-bottom: 0;
+  }
+  section.social-media .social-media-logo {
+    width: 255px;
+  }
   section.about {
     padding-top: 120px;
   }
@@ -508,6 +537,9 @@ section.tour-facility {
 }
 section {
   padding: 80px 0 80px;
+}
+section.social-media .social-media-logo {
+  width: 285px;
 }
 .col-md-6.text.order-1.order-sm-2 {
   padding: 55px;
