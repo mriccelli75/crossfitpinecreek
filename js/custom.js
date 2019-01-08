@@ -34,4 +34,10 @@ $('.navbar .navbar-toggler').on('click', function () {
       }
   });
 
-  
+   // Hide navbar when modals trigger
+$('.facility-modal').on('show.bs.modal', function(e) {
+    $(".navbar").addClass("d-none");
+  })
+  $('.facility-modal').on('hidden.bs.modal', function(e) {
+    $(".navbar").removeClass("d-none");
+  });
