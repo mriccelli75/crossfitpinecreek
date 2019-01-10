@@ -40,4 +40,4 @@ $('.facility-modal').on('show.bs.modal', function(e) {
   })
   $('.facility-modal').on('hidden.bs.modal', function(e) {
     $(".navbar").removeClass("d-none");
-  });
+});
